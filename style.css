@@ -134,10 +134,18 @@
 
 .introduction__link-text {
 	padding: 14px 31px 14px 30px;
-	max-width: 155px;
+	max-width: 160px;
 	background-color: rgba(242, 153, 74, 1);
 	border-radius: 3px;
 	text-align: center;
+	box-shadow: -11px 18px 37px 0px rgba(242, 153, 74, .23);
+	transition: .3s;
+}
+
+.introduction__link-text:hover {
+	background-color: #211856;
+	border: 2px solid #F2994A;
+	transition: .3s;
 }
 
 .introduction__link {
@@ -176,10 +184,199 @@
 	top: 317px;
 	left: 143px;
 	z-index: 2;
+	border-radius: 9px;
+	box-shadow: -16px 24px 37px 0px rgba(19, 194, 150, .24);
 }
 
 .introduction__image-decoration {
 	position: absolute;
 	top: 247px;
 	left: 301px;
+}
+
+.partners {
+	margin-top: 100px;
+	background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+	padding-top: 138px;
+	padding-bottom: 276px;
+	font-family: 'Inter', sans-serif;
+	position: relative;
+	z-index: -2;
+}
+
+.partners__container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.partners__container::after {
+	content: '';
+	width: 473px;
+	height: 214px;
+	position: absolute;
+	top: 550px;
+	left: 99px;
+	z-index: -1;
+	background-image: url('./img/third-section/green-dot.svg');
+	background-position: center;
+	display: inline-block;
+}
+
+.partners__container::before {
+	content: '';
+	width: 473px;
+	height: 214px;
+	position: absolute;
+	top: 269px;
+	left: 605px;
+	z-index: -1;
+	background-image: url('./img/third-section/red-dot.svg');
+	background-position: center;
+	display: inline-block;
+}
+
+.partners__title {
+	color: #272D4E;
+	font-weight: 600;
+	font-size: 55px;
+	line-height: 70px;
+	text-align: center;
+	max-width: 580px;
+	margin: auto;
+	margin-bottom: 103px;
+}
+
+.partners__text-block {
+	padding: 106px 82px 87px;
+	background-color: rgba(255, 255, 255, 1);
+	text-align: center;
+	max-width: 720px;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 0px 18px 53px 0px rgba(215, 228, 249, .5);
+	position: relative;
+	margin-bottom: 95px;
+}
+
+/* .partners__text-block::after {
+	content: '';
+	display: inline-block;
+	width: 678px;
+	height: 363px;
+	border-radius: 20px;
+	color: #FFFFFF;
+	box-shadow: 0px 18px 53px 0px rgba(215, 228, 249, .5);
+	position: absolute;
+}
+
+.partners__text-block::before {
+
+} */
+
+.partners__text-wrapper {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+.partners__text {
+	font-weight: 400;
+	line-height: 39.5px;
+	font-size: 26px;
+	color: rgba(148, 162, 179, 1);
+}
+
+.partners__text-wrapper::after {
+	content: '';
+	width: 234px;
+	height: 168px;
+	display: inline-block;
+	background-image: url('./img/third-section/”.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	left: 166px;
+	top: -76px;
+	z-index: -1;
+ }
+
+ .partners__decoration-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+ }
+
+ .partners__decoration-image {
+	border-radius: 50%;
+ }
+
+ .first-image {
+	position: absolute;
+	top: 85px;
+	left: 16px;
+}
+
+.second-image {
+	position: absolute;
+	top: 300px;
+	left: -180px;
+}
+
+.third-image {
+	position: absolute;
+	top: 642px;
+	left: -14px;
+}
+
+.fourth-image {
+	position: absolute;
+	top: 71px;
+	left: 1003px;
+}
+
+.fifth-image {
+	position: absolute;
+	top: 328px;
+	left: 1158px;
+}
+
+.sixth-image {
+	position: absolute;
+	top: 706px;
+	left: 1060px;
+}
+
+/* почему-то работает только с открытым devtools */
+
+.partners__links {
+	position: relative;
+}
+
+.partners__link-back {
+	position: absolute;
+	top: 0px;
+	left: 749px;
+	transition: .3s;
+}
+
+.partners__link-back:hover {
+	margin-left: -5px;
+	transition: .3s;
+}
+
+.partners__link-forward {
+	position: absolute;
+	top: 0px;
+	left: 809px;
+	transition: .3s;
+}
+
+.partners__link-forward:hover {
+	/* width: 52px;
+	height: 25px; */
+	margin-left: 5px;
+	transition: .3s;
 }
